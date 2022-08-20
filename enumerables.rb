@@ -80,9 +80,9 @@ end
 def average_heat_level(spicy_foods)
   # your code here
   total_heat_level = 0
-  spicy_foods.each do |food|
-    total_heat_level += food[:heat_level]
-  end
+
+  spicy_foods.each { |food| total_heat_level += food[:heat_level]  }
+  
   total_heat_level / spicy_foods.length
 end
 puts average_heat_level(spicy_foods)
